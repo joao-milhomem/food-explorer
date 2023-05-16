@@ -12,4 +12,9 @@ export const Container = styled.button`
   border-radius: 5px;
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+  &:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+  }
 `;
