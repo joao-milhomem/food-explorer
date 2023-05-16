@@ -27,12 +27,17 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
   }
+
   
   button {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+  }
+
+  button,textarea, input {
     border: none;
     outline: none;
+    background: none;
   }
 
   footer {

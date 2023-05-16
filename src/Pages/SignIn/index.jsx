@@ -1,18 +1,28 @@
 import { Container, Form } from "./styles";
 import logo from "../../assets/logo.svg";
-import { Link } from "react-router-dom";
+import { Input } from "../../Components/Input";
+import { Button } from "../../Components/Button";
 export function SignIn() {
   return (
     <Container>
       <img src={logo} alt="" />
+
       <Form>
-        <label htmlFor="">Email</label>
-        <input type="text" placeholder="exemplo@email.com" />
+        <Input
+          type="text"
+          inputLabel={"Email"}
+          placeholder="exemplo@exemplo.com.br"
+          id={"email"}
+        />
 
-        <label htmlFor="">Senha</label>
-        <input type="text" placeholder="No mínimo 6 caracteres" />
+        <Input
+          type="password"
+          inputLabel={"Senha"}
+          placeholder="No minimo 6 caracteres"
+          id={"password"}
+        />
 
-        <button>Entrar</button>
+        <Button>Entrar</Button>
 
         <a href="">Ainda não tenho conta</a>
       </Form>
