@@ -17,17 +17,48 @@ export const Nav = styled.ul`
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 14%;
+  justify-content: space-evenly;
+  gap: 12%;
   padding-inline: 10vw;
 
-  button {
+  * button {
     display: flex;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    max-height: 28px;
+  li:nth-child(2) > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      width: 100%;
+      display: block;
+      max-height: 30px;
+    }
+
+    span {
+      font-family: Roboto;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.9rem;
+      color: ${({ theme }) => theme.COLORS.CAKE_200};
+    }
+  }
+
+  //notifications
+  li:last-child {
+    button {
+      position: relative;
+    }
+    span {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 20px;
+
+      border-radius: 50px;
+      background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
+      color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
   }
 `;
