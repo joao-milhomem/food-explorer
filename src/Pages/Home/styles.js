@@ -11,7 +11,72 @@ export const Container = styled.div`
     "main"
     "footer";
 
+  > * {
+    min-width: 0;
+  }
+
   main {
     grid-area: main;
+  }
+`;
+
+export const Content = styled.div`
+  height: 100%;
+`;
+
+export const Marketing = styled.div`
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin: 44px 12px 62px 30px;
+
+  background: ${({ theme }) => theme.COLORS.GRADIENT_200};
+  border-radius: 5px;
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    left: -24px;
+    width: 191px;
+    padding: 0px 34px 0 0px;
+  }
+
+  .text-container {
+    padding: 16px 0px 18px 128px;
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      margin-top: 4px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7rem;
+    }
+  }
+`;
+
+export const Section = styled.section`
+  width: 100%;
+  padding-left: 24px;
+  margin-bottom: 24px;
+
+  > h3 {
+    margin-bottom: 24px;
+
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
   }
 `;
