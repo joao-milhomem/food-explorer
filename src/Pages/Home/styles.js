@@ -29,7 +29,7 @@ export const Marketing = styled.div`
 
   display: flex;
   align-items: center;
-  margin: 44px 12px 62px 30px;
+  margin: 14vw 4vw 20vw 9.5vw;
 
   background: ${({ theme }) => theme.COLORS.GRADIENT_200};
   border-radius: 5px;
@@ -37,23 +37,28 @@ export const Marketing = styled.div`
   > img {
     position: absolute;
     bottom: 0;
-    left: -24px;
-    width: 191px;
-    padding: 0px 34px 0 0px;
+    left: -26px;
+
+    max-width: 191px;
+    padding-right: 32px;
   }
 
   .text-container {
-    padding: 16px 0px 18px 128px;
+    padding: 7vw 0 5.5vw 39vw;
+    
+    width: 100%;
 
     h1 {
-      font-size: 1.6rem;
+      font-family: "Poppins";
+      font-size: clamp(1.4rem, 4.4vw, 4rem);
       font-weight: 600;
-      line-height: 2.5rem;
-      margin-top: 4px;
+      line-height:max(2.5rem,3.5vw);
+      margin-bottom: 3px;
     }
 
     p {
       font-size: 1rem;
+      font-size: clamp(1rem, 3.1vw, 1.6rem);
       font-weight: 400;
       line-height: 1.7rem;
     }

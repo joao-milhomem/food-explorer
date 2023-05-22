@@ -6,6 +6,7 @@ export function Card() {
   return (
     <Container>
       <FiHeart size={24} />
+
       <img src={salad} alt="" />
 
       <p>
@@ -16,13 +17,13 @@ export function Card() {
       <span>R$ 49,97</span>
 
       <div className="amount">
-        <button>
+        <button type="button">
           <FiMinus size={24} />
         </button>
 
         <span>01</span>
 
-        <button>
+        <button type="button">
           <FiPlus size={24} />
         </button>
       </div>

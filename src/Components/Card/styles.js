@@ -2,17 +2,23 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  width: 100%;
-  min-width: 210px;
-  padding: 24px;
 
   display: grid;
   text-align: center;
   gap: 12px;
 
+  min-width: 210px;
+  width: 100%;
+  max-width: 304px;
+  padding: 24px;
+
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
   border-radius: 8px;
+/* 
+  > * svg {
+    background-color: blue;
+  } */
 
   > svg {
     position: absolute;
@@ -65,6 +71,7 @@ export const Container = styled.div`
   }
 
   > button {
+    margin-top: 4px;
     padding: 4px;
 
     font-size: 1.4rem;
