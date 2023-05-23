@@ -1,8 +1,8 @@
 import { Container, Content, Marketing, Section } from "./styles";
 import { Header } from "../../Components/Header";
 import { Footer } from "../../Components/Footer";
-import cropArt from "../../assets/crop_art.png";
-import cropArtBg from "../../assets/crop_art_bg.png";
+import cropArt from "../../assets/cropArt.svg";
+
 import { Card } from "../../Components/Card";
 
 export function Home() {
@@ -13,13 +13,13 @@ export function Home() {
       <Header isAdmin={isAdmin} />
 
       <main>
-        <Content>
+
           <Marketing>
             <img src={cropArt} alt="" />
             <div className="text-container">
               <h1>Sabores iniguláveis</h1>
 
-              <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+              <p>Sinta o cuidado <span className="max375px">do preparo</span> com ingredientes selecionados.</p>
             </div>
           </Marketing>
 
@@ -40,7 +40,7 @@ export function Home() {
               <Card />
             </div>
           </Section>
-        </Content>
+
       </main>
       <Footer />
     </Container>

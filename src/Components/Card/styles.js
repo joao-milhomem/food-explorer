@@ -15,7 +15,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
   border-radius: 8px;
-/* 
+  /* 
   > * svg {
     background-color: blue;
   } */
@@ -28,6 +28,8 @@ export const Container = styled.div`
 
   > img {
     justify-self: center;
+    display: block;
+    width: clamp(8.8rem, 8.2vw, 176px);
   }
 
   > p {
